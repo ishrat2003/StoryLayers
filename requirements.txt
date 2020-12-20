@@ -1,0 +1,8 @@
+wheel
+numpy
+datetime
+nltk
+regex
+boto3
+uuid
+datetime

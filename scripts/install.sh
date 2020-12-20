@@ -33,6 +33,7 @@ then
    helpFunction
 fi
 
+rm -r "python/lib/python$pythonVersion/site-packages/*"
 docker run -v "$PWD":/var/task "lambci/lambda:build-python$pythonVersion" /bin/sh -c "pip install -r requirements.txt -t python/lib/python$pythonVersion/site-packages/; exit"
 
 if [[ $upload -eq "yes" ]]
