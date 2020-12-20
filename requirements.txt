@@ -6,3 +6,4 @@ regex
 boto3
 uuid
 datetime
+pandas
